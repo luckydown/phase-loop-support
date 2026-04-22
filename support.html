@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase Loop Support</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4efe7;
+      --panel: rgba(255, 255, 255, 0.88);
+      --text: #10212b;
+      --muted: #55636c;
+      --accent: #e06c2f;
+      --border: rgba(16, 33, 43, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(224, 108, 47, 0.18), transparent 32%),
+        linear-gradient(135deg, #f6f0e8 0%, #e4edf2 100%);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(760px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 24px 80px rgba(16, 33, 43, 0.12);
+      backdrop-filter: blur(12px);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(224, 108, 47, 0.12);
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+
+    .card {
+      margin-top: 28px;
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid var(--border);
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">Support</div>
+    <h1>Phase Loop Support</h1>
+    <p>
+      Need help with the game, a purchase, or a bug report? Contact us using the details below and include your
+      device model, iOS version, and a short description of the issue so we can help faster.
+    </p>
+
+    <div class="card">
+      <p><strong>Support email:</strong> <a href="mailto:pandacik@outlook.com">pandacik@outlook.com</a></p>
+      <p><strong>Response time:</strong> We aim to reply within 3 business days.</p>
+      <p><strong>Privacy policy:</strong> <a href="./privacy.html">View privacy policy</a></p>
+    </div>
+
+    <div class="card">
+      <p><strong>Helpful details to send:</strong></p>
+      <ul>
+        <li>Game version</li>
+        <li>Device model and OS version</li>
+        <li>What happened before the issue started</li>
+        <li>A screenshot or short screen recording if available</li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
